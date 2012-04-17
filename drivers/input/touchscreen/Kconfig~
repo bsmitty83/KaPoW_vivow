@@ -316,7 +316,6 @@ config TOUCHSCREEN_ELAN_KTF2K
 	depends on I2C
 	help
 	  This enables support for Elan KTF2000 over I2C based touchscreens.
-
 config TOUCHSCREEN_WACOM_W8001
 	tristate "Wacom W8001 penabled serial touchscreen"
 	select SERIO
@@ -480,9 +479,10 @@ config TOUCHSCREEN_TNETV107X
 	help
 	  Say Y here if you want to use the TNETV107X touchscreen.
 
+<<<<<<< HEAD
 	  To compile this driver as a module, choose M here: the
 	  module will be called tnetv107x-ts.
-
+=======
 config TOUCHSCREEN_ATMEL_SWEEP2WAKE
         tristate "Sweep2Wake for Atmel based touchscreens"
         depends on TOUCHSCREEN_ATMEL
@@ -494,6 +494,7 @@ config TOUCHSCREEN_COMPATIBLE_REPORT
 	default n
 	help
 	  This enables support for old report style in touchscreen driver
+>>>>>>> e7b5429... sweep2wake_atmel: Add sweep2wake dependencies
 
 config TOUCHSCREEN_SYNAPTICS_I2C_RMI
 	tristate "Synaptics i2c touchscreen"
