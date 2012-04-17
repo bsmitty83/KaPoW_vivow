@@ -1583,20 +1583,15 @@ config MSM_DALRPC_TEST
 	help
 	  Exercises DAL RPC calls to QDSP6.
 
-<<<<<<< HEAD
 config CPU_VOLTAGE_TABLE
     bool "Enable CPU Voltage Table via sysfs for adjustements"
     default n
  
-=======
 config CMDLINE_OPTIONS
 	bool "Enable cmdline options command parsing"
 	default n
 	help
 	  This enables the parsing of cmdline options.
-
->>>>>>> e7b5429... sweep2wake_atmel: Add sweep2wake dependencies
-if CPU_FREQ_MSM
 
 config MSM_CPU_FREQ_SET_MIN_MAX
 	bool "Set Min/Max CPU frequencies."
@@ -2407,4 +2402,5 @@ config HTC_ACCESSORY_ONEWIRE
         default n
         help
           Provides support of HTC one wire protocol driver.
-endif
+
+
