@@ -2655,6 +2655,10 @@ CONFIG_NLS_ISO8859_1=y
 # CONFIG_NLS_KOI8_R is not set
 # CONFIG_NLS_KOI8_U is not set
 # CONFIG_NLS_UTF8 is not set
+<<<<<<< HEAD
+=======
+# CONFIG_DLM is not set
+>>>>>>> a33e2d9...  Optimized ARM RWSEM algorithm
 CONFIG_DYNAMIC_FSYNC=y
 
 #
