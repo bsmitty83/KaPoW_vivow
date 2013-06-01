@@ -1,0 +1,2 @@
+#!/bin/ksh
+find/home/KaPoW -type f -name "*.rej" -exec rm "{}" \;
