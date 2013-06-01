@@ -2255,6 +2255,13 @@ config MSM_FAKE_BATTERY
 		help
 		 Enables MSM fake battery driver.
 
+config FORCE_FAST_CHARGE
+        bool "Force AC charge mode at will"
+        default y
+        help
+          A simple sysfs interface to force adapters that
+          are detected as USB to charge as AC.
+ 
 config MSM_QDSP6_APR
 	bool "Audio QDSP6 APR support"
 	depends on MSM_SMD

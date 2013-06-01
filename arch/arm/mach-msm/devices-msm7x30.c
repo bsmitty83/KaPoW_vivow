@@ -1185,6 +1185,10 @@ struct resource kgsl_3d0_resources[] = {
 static struct kgsl_device_platform_data kgsl_3d0_pdata = {
 	.pwrlevel = {
 		{
+			.gpu_freq = 287574000,
+			.bus_freq = 192000000,
+		},
+		{
 			.gpu_freq = 266667000,
 			.bus_freq = 192000000,
 		},
@@ -1193,12 +1197,16 @@ static struct kgsl_device_platform_data kgsl_3d0_pdata = {
 			.bus_freq = 152000000,
 		},
 		{
+			.gpu_freq = 212907000,
+			.bus_freq = 152000000,
+		},
+		{
 			.gpu_freq = 192000000,
 			.bus_freq = 0,
 		},
 	},
 	.init_level = 0,
-	.num_levels = 3,
+	.num_levels = 5,
 	.set_grp_async = set_grp3d_async,
 	.idle_timeout = HZ/20,
 	.nap_allowed = true,
