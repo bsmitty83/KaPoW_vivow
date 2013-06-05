@@ -311,7 +311,7 @@ DEVICE_ATTR(idle_timer, 0644, kgsl_pwrctrl_idle_timer_show,
 	kgsl_pwrctrl_idle_timer_store);
 DEVICE_ATTR(gpubusy, 0644, kgsl_pwrctrl_gpubusy_show,
 	NULL);
-DEVICE_ATTR(gpu_available_frequencies, 0444,
+DEVICE_ATTR(gpu_available_frequencies, 0644,
 	kgsl_pwrctrl_gpu_available_frequencies_show,
 	NULL);
 
