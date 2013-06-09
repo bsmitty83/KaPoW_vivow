@@ -284,7 +284,8 @@ static int kgsl_pwrctrl_gpubusy_show(struct device *dev,
 static int kgsl_pwrctrl_gpu_available_frequencies_show(
 
 					struct device *dev,
-					struct device_attribute *attr,                                  char *buf)
+					struct device_attribute *attr,
+					char *buf)
 
 {
 
@@ -303,15 +304,15 @@ static int kgsl_pwrctrl_gpu_available_frequencies_show(
 
 }
 
-DEVICE_ATTR(gpuclk, 0644, kgsl_pwrctrl_gpuclk_show, kgsl_pwrctrl_gpuclk_store);
-DEVICE_ATTR(max_gpuclk, 0644, kgsl_pwrctrl_max_gpuclk_show,
+DEVICE_ATTR(gpuclk, 0666, kgsl_pwrctrl_gpuclk_show, kgsl_pwrctrl_gpuclk_store);
+DEVICE_ATTR(max_gpuclk, 0666, kgsl_pwrctrl_max_gpuclk_show,
 	kgsl_pwrctrl_max_gpuclk_store);
-DEVICE_ATTR(pwrnap, 0644, kgsl_pwrctrl_pwrnap_show, kgsl_pwrctrl_pwrnap_store);
-DEVICE_ATTR(idle_timer, 0644, kgsl_pwrctrl_idle_timer_show,
+DEVICE_ATTR(pwrnap, 0666, kgsl_pwrctrl_pwrnap_show, kgsl_pwrctrl_pwrnap_store);
+DEVICE_ATTR(idle_timer, 0666, kgsl_pwrctrl_idle_timer_show,
 	kgsl_pwrctrl_idle_timer_store);
-DEVICE_ATTR(gpubusy, 0644, kgsl_pwrctrl_gpubusy_show,
+DEVICE_ATTR(gpubusy, 0444, kgsl_pwrctrl_gpubusy_show,
 	NULL);
-DEVICE_ATTR(gpu_available_frequencies, 0644,
+DEVICE_ATTR(gpu_available_frequencies, 0444,
 	kgsl_pwrctrl_gpu_available_frequencies_show,
 	NULL);
 
