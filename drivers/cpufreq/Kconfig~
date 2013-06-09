@@ -15,8 +15,11 @@ config CPU_FREQ
 
 	  If in doubt, say N.
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> e2735cd... add intellidemand cpu governor
 if CPU_FREQ
 
 config CPU_FREQ_TABLE
@@ -282,6 +285,7 @@ config CPU_FREQ_GOV_CONSERVATIVE
 
 	  If in doubt, say N.
 
+<<<<<<< HEAD
 config CPU_FREQ_VDD_LEVELS
   bool "CPU Vdd levels sysfs interface"
   depends on CPU_FREQ_STAT
@@ -291,6 +295,8 @@ config CPU_FREQ_VDD_LEVELS
     CPU Vdd levels sysfs interface
 
 
+=======
+>>>>>>> e2735cd... add intellidemand cpu governor
 config CPU_FREQ_GOV_SAVAGEDZEN
 	tristate "'savagedzen' cpufreq governor"
 	depends on CPU_FREQ
@@ -307,11 +313,24 @@ config CPU_FREQ_GOV_SCARY
 		If in doubt, say N.
 
 
+<<<<<<< HEAD
  
+=======
+>>>>>>> e2735cd... add intellidemand cpu governor
 menu "x86 CPU frequency scaling drivers"
 depends on X86
 source "drivers/cpufreq/Kconfig.x86"
 endmenu
 
+<<<<<<< HEAD
+=======
+config VDD_SYSFS_INTERFACE
+	bool "VDD SYSFS Interface"
+	depends on CPU_FREQ_STAT
+	depends on ARCH_MSM7X30
+	default n
+	help
+	  Creates a sysfs interface for VDD entries
+>>>>>>> e2735cd... add intellidemand cpu governor
 endif
 endmenu

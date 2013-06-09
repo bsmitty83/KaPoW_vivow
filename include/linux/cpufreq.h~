@@ -375,10 +375,13 @@ extern struct cpufreq_governor cpufreq_gov_SavagedZen;
 #elif defined(CONFIG_CPU_FREQ_DEFAULT_GOV_SMARTASS2)
 extern struct cpufreq_governor cpufreq_gov_smartass2;
 #define CPUFREQ_DEFAULT_GOVERNOR  (&cpufreq_gov_smartass2)
-extern struct cpufreq_governor cpufreq_gov_vr;
-#define CPUFREQ_DEFAULT_GOVERNOR  (&cpufreq_gov_vr)
-#elif defined(CONFIG_CPU_FREQ_DEFAULT_GOV_VR)
+<<<<<<< HEAD
 
+=======
+#elif defined(CONFIG_CPU_FREQ_DEFAULT_GOV_INTELLIDEMAND)
+extern struct cpufreq_governor cpufreq_gov_intellidemand;
+#define CPUFREQ_DEFAULT_GOVERNOR (&cpufreq_gov_intellidemand)
+>>>>>>> e2735cd... add intellidemand cpu governor
 #endif
 
 
